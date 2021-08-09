@@ -1,0 +1,33 @@
+body {
+    background: lightgreen; /* fallback color */
+    background: linear-gradient( to bottom, white, lightgreen);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: fit-content;
+}
+
+
+.top_nav{
+    list-style: none;
+}
+
+button{
+
+    border-width: 3px 3px 3px 0;
+    transform-origin: bottom left;
+    transform: skewX(-30deg);
+    border-radius: 5px;
+}
+
+ul li{
+    display: inline;
+}
+
+section{
+    position:absolute;
+    top:400px;
+    left:100px;
+    z-index: 500px;
+}
+
