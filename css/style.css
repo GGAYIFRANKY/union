@@ -12,13 +12,7 @@ body {
     list-style: none;
 }
 
-button{
 
-    border-width: 3px 3px 3px 0;
-    transform-origin: bottom left;
-    transform: skewX(-30deg);
-    border-radius: 5px;
-}
 
 ul li{
     display: inline;
@@ -31,3 +25,52 @@ section{
     z-index: 500px;
 }
 
+
+/* creating the trapezium shape*/
+.trapezium {
+    height: 0;
+    width: 100px;
+    border-bottom: 40px solid green;
+    border-left: 20px solid transparent;
+    
+}
+
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .tab {
+      height: 0;
+      width: fit-content;
+      border-bottom: 40px solid #CCCCCC;
+      border-radius: 10px;
+      border-left: 20px solid transparent;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      box-sizing: border-box;
+      display: block;
+  }
+  
+  .tab:not(:first-child) {
+      margin-left: -10px;
+      z-index: 0;
+  }
+  
+  .tab .label{
+    padding: 10px;
+    text-align: center;
+    color: #444444;
+  }
+  
+  .active {
+    border-bottom: 40px solid #444444;
+    z-index: 10;
+  }
+  .active .label{
+    color: #ffffff;
+  }
+
+  
+  
